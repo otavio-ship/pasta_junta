@@ -1,0 +1,132 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 20px;
+    background-color: #FFE7AE;
+}
+
+.formBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    padding: 30px 25px;
+    border-radius: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inputGroup {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #999;
+    font-size: 16px;
+    Padding: 2px;
+    outline: none;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    width: 100%;
+}
+
+.error {
+    width: 100%;
+    color: #d32f2f;
+    background-color: #ffebee;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+button {
+    border: none;
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: #2B2D42;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.esqueceu {
+    color: darkgrey;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .formBox {
+        padding: 15px 12px;
+        max-width: 300px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input {
+        height: 36px;
+        font-size: 14px;
+    }
+
+    button {
+        height: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .formBox {
+        padding: 15px 10px;
+        max-width: 280px;
+    }
+
+    label {
+        font-size: 13px;
+    }
+
+    input {
+        height: 34px;
+        font-size: 13px;
+    }
+
+    button {
+        height: 34px;
+        font-size: 13px;
+    }
+}
